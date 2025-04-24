@@ -167,3 +167,43 @@ body {
   display: flex;
   align-items: center;
 }
+
+.review-res {
+  transform: scale(1);
+  transform-origin: left center;
+  display: inline-block;
+}
+
+.review-res {
+  transform: scale(1); /* Default size for desktops and large laptops */
+  transform-origin: left center;
+  display: inline-block;
+}
+
+/* Medium laptops and tablets (width ≤ 1024px) */
+@media (max-width: 1024px) {
+  .review-res {
+    transform: scale(0.9);
+  }
+}
+
+/* Tablets and small laptops (width ≤ 768px) */
+@media (max-width: 768px) {
+  .review-res {
+    transform: scale(0.8);
+  }
+}
+
+/* Mobile phones (width ≤ 576px) */
+@media (max-width: 576px) {
+  .review-res {
+    transform: scale(0.7);
+  }
+}
+
+/* Very small phones (width ≤ 400px) */
+@media (max-width: 400px) {
+  .review-res {
+    transform: scale(0.6);
+  }
+}
